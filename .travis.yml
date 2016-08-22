@@ -11,7 +11,7 @@ php:
   - 5.6
   - 7.0
 env:
-  - VERSION=8.x-4.x
+  - VERSION=8.x-4.x-di
   
 sudo: false
 
@@ -65,7 +65,7 @@ before_script:
 
 script:
   - cd ./profiles/varbase
-  - behat --strict
+  - behat -di
 
 matrix:
   fast_finish: true
