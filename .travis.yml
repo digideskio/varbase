@@ -66,6 +66,7 @@ before_script:
 script:
   - cd ./profiles/varbase
   - behat -di
+  
 
 matrix:
   fast_finish: true
